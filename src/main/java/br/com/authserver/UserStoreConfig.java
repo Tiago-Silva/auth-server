@@ -17,7 +17,7 @@ public class UserStoreConfig {
         userDetailsManager.createUser(
             User.withUsername("user")
                 .password("{noop}password")
-                .roles("USER")
+                .roles("USER","ADMIN")
                 .build());
 
         return userDetailsManager;

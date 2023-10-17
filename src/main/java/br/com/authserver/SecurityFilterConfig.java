@@ -19,7 +19,7 @@ public class SecurityFilterConfig {
 
     @Bean
     @Order(1)
-    SecurityFilterChain authServerSercurityFilterChain(HttpSecurity http) throws Exception {
+    SecurityFilterChain authServerSecurityFilterChain(HttpSecurity http) throws Exception {
         OAuth2AuthorizationServerConfiguration.applyDefaultSecurity(http);
         http.getConfigurer(OAuth2AuthorizationServerConfigurer.class)
             .oidc(withDefaults());	// Enable OpenID Connect 1.0

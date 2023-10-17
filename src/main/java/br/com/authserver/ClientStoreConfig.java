@@ -23,7 +23,7 @@ public class ClientStoreConfig {
             .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
             .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
             .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
-            .redirectUri("http://127.0.0.1:8080/login/oauth2/code/client-server")
+            .redirectUri("http://127.0.0.1:8080/login/oauth2/code/oidc-client")
             .postLogoutRedirectUri("http://127.0.0.1:8080/")
             .scope(OidcScopes.OPENID)
             .scope(OidcScopes.PROFILE)
