@@ -41,7 +41,10 @@ public class SecurityFilterConfig {
     @Order(2)
     SecurityFilterChain defaulSecurityFilterChain(HttpSecurity http) throws Exception {
         http
-            .authorizeHttpRequests((authorize) -> authorize.anyRequest().authenticated())
+            .authorizeHttpRequests((authorize) -> {
+                authorize.requestMatchers("/public").permitAll();
+                authorize.anyRequest().authenticated();
+            })
             // Form login handles the redirect to the login page from the
             // authorization server filter chain
             .formLogin(withDefaults());
