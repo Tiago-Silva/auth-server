@@ -10,7 +10,7 @@ Primeiro, você deve clonar o projeto na sua máquina, para isso você
 pode colar o seguinte comando em seu terminal
 
 ```bash
-git clone git@github.com:Tiago-Silva/auth-server.git
+git clone https://github.com/Tiago-Silva/auth-server.git
 ```
 
 Para instalar as dependências, realize o reload com o Maven, se você preferir pode executar o camando via terminal:
